@@ -8,7 +8,7 @@ import (
 func TestExecute(t *testing.T) {
 	array := []time.Time{}
 
-	testTask := New(func() {
+	testTask := NewTask(func() {
 		array = append(array, time.Now())
 	})
 
